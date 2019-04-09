@@ -334,8 +334,128 @@
 
 // let arr = [1, 2, 3, 4, 5, 6];
 
-// ДОМАШНЕЕ ЗАДАНИЕ 4
+// ДОМАШНЕЕ ЗАДАНИЕ 4 -------------
 
+// задача 1
+
+    // function writeInt(n) {
+    //     if (n >= 0) {
+    //     write(n - 1);
+    //     conspole.log(n + '<br>')
+    //     }
+    // }
+    // writeInt(5) 
+
+// задача 2 
+
+//   let  a = prompt('A');
+//   let  b = prompt('B');
+
+//     function writeInt(a, b){
+        
+//         if ( a < b ){
+//             writeInt(a, b - 1);
+//             console.log(b);
+//         }else if ( a > b){
+//             console.log(a);
+//             writeInt(a - 1, b);
+//         }else {
+//             console.log(a);
+//         }
+//     }
+
+//     writeInt(a, b)
+
+// задача 3
+
+    // let n = prompt('n');
+
+    // function recursion(n) {
+    //     if (n < 10) {
+    //         return n;
+    //     }else {
+    //         return n % 10 + recursion(n / 10);
+    //     }
+    // }
+
+    // console.log(recursion(n));
+
+// задача 4 ----------------------------------------------------
+
+// задача 5 ----------------------------------------------------
+
+// задача 6
+
+// let arr1 = ["a", "b", 'c'];
+// let arr2 = [1, 2, 3];
+// let arr3 = arr1.concat(arr2);
+
+// console.log(arr3);
+
+// задача 7
+
+// let arr1 = ["a", "b", 'c'];
+// arr1.push(1, 2, 3);
+
+// console.log(arr1);
+
+// задача 8
+
+// let arr1 = [1, 2, 3];
+// arr1.unshift(4, 5, 6);
+
+// console.log(arr1);
+
+// задача 9
+
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = arr1.slice(0, 3);
+
+// console.log(arr2);
+
+// задача 10
+
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = arr1.slice(3);
+
+// console.log(arr2);
+
+// задача 11
+
+// let arr1 = [1, 2, 3, 4, 5];
+// arr1.splice(1, 2);
+
+// console.log(arr1);
+
+// задача 12 
+
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = arr1.splice(1, 3);
+
+// console.log(arr2);
+
+// задача 13 
+
+// let arr1 = [1, 2, 3, 4, 5];
+// arr1.splice(2, 0, 'a', 'b', 'c');
+
+// console.log(arr1);
+
+// задача 14
+
+// let arr1 = [1, 2, 3, 4, 5];
+// arr1.splice(1, 0, 'a', 'b');
+// arr1.splice(6, 0, 'c');
+// arr1.splice(8, 0, 'd');
+
+// console.log(arr1);
+
+
+
+
+
+
+        
 
 
 
