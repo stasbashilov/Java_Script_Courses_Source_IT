@@ -325,7 +325,7 @@
 //      }else{
 //         return elem - 1;
 //      }
-         
+
 //  });
 
 //  console.log(arr2)
@@ -451,20 +451,14 @@
 // console.log(arr1);
 
 
+// задача 1 
 
+// Выводим числа от 10 до 1
 
+// var countFrom = function(n) {
+//     if (n === 0) return; 
+//     console.log(n);
+//     countFrom (n - 1);
+// }
 
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
+// countFrom(10);
