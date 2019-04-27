@@ -59,7 +59,7 @@ console.log(petya.getPrivateProperty());
 console.log(Reflect.ownKeys(petya));
 console.log(Object.keys(petya));
 
-// дескриптор посмотреть видос с занятия, прокси разобрать, симбол тип, имитация приватныхсвойств
+// дескриптор посмотреть видос с занятия, прокси разобрать, симбол тип, имитация приватныхсвойств, lazy.js
 
 Object.defineProperty(petya, 'age', {
     enumerable: false,
