@@ -1,71 +1,32 @@
 'use strict';
 
-class Helper {
-    static sum(a, b) {
-        return a + b;
+class EventListeners {
+    constructor(debugMessage = 'test') {
+        this.debugMessage = debugMessage;
     }
+
+    onCalc(event){
+        // calcForm.removeEventListener('submit',  onCalc);
+        event.preventDefault();
+        const aInput = event.target.querySelector('input[name="a"]');
+        const a = parseFloat(aInput.value);
+        const bInput = event.target.querySelector('input[name="b"]');
+        const b = parseFloat(bInput.value);
+        const operationSelect = event.target.querySelector('select[name="operation"]');
+        const operation = parseFloat(operationSelect.value);
+        const result = eval(`${a} ${operation} ${b}`);
+        document.getElementById('result').innerHTML = `<strong>Result:</strong>${result}`;
+        // console.log(this.debugMessage, eval(`${a} ${operation} ${b}`));
+    }
+
 }
 
-Helper.sum(2, 3);
+const calcForm = document.getElementById("calc");
+const listeners = new EventListeners('calcForm');
 
-class HelperOne {
-    static sum(a, b, c) {
-        return a + b + c;
-    }
-}
+calcForm.addEventListener('submit',  listeners.onCalc.bind(listeners));
 
-HelperOne.sum(2, 3, 4);
-console.log(HelperOne.sum(2, 3, 4));
-
-const sym = Symbol('private property');
-
-const Person = (function () {
-
-    class Person {
-        constructor() {
-            this.name = name;
-            this[sym] = 'sddd';
-        }
-
-        getPrivateProperty() {
-            return this[sym];
-        }
-    }
-    return Person;
-}());
+// calcForm.removeEventListener('submit',  onCalc);
 
 
 
-
-const Person1 = (function () {
-
-    class Person {
-        constructor() {
-            this.name = name;
-            this[sym] = 'sddd';
-        }
-
-        getPrivateProperty() {
-            return this[sym];
-        }
-    }
-    return Person;
-}());
-
-const petya = new Person('Petya');
-const petya1 = new Person('Petya');
-
-console.log(petya.getPrivateProperty());
-console.log(Reflect.ownKeys(petya));
-console.log(Object.keys(petya));
-
-// дескриптор посмотреть видос с занятия, прокси разобрать, симбол тип, имитация приватныхсвойств
-
-Object.defineProperty(petya, 'age', {
-    enumerable: false,
-    value: 15,
-})
-
-console.log(petya);
-console.log(Object.keys(petya));
-console.log(Reflect.ownKeys(petya));
