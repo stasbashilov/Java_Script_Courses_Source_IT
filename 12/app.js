@@ -30,6 +30,3 @@ calcForm.addEventListener('submit',  listeners.onCalc.bind(listeners));
 
 
 
-
-
-
